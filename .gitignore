@@ -1,0 +1,30 @@
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+client/node_modules/
+
+# ── Build output ──────────────────────────────────────────────────────────────
+client/dist/
+
+# ── Python ML service (local dev only, not needed for Render deploy) ──────────
+ml-service/venv/
+ml-service/__pycache__/
+ml-service/*.pyc
+ml-service/.env
+# HuggingFace model cache (large, re-downloaded on demand)
+ml-service/models/
+
+# ── Feedback data (local dev) ─────────────────────────────────────────────────
+server/data/
+
+# ── Training data ─────────────────────────────────────────────────────────────
+training/data/
+
+# ── OS / Editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
